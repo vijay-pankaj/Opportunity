@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-center {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+
+.header-center a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    height: 50px;
+}
+
+.btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url("heroImage.jpg"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.herosec2 {
+    margin-top: 2vh;
+}
+
+/* Group Section */
+.group-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px;
+}
+
+.group1, .group2, .group3, .group4 {
+    width: 48%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    position: relative;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Learn more button */
+.learn-more {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.learn-more:hover {
+    background-color: #0056b3;
+}
+
+.bodyj h1 {
+    text-align: center;
+}
+
+.bodyj p {
+    text-align: center;
+}
+
+/* Signup Form */
+.signup-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Signup form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.signup-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Sign up button */
+.signup-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Container */
+.footer {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: space-evenly;
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1; /* Make each section take up equal space */
+    padding: 0 20px;
+    margin: 10px; /* Space between sections */
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+/* Social Media and Copyright */
+.social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social i {
+    margin: 0 5px;
+    color: #f1f1f1; /* Icon color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        font-size: 1.5em; /* Smaller font size on mobile */
+    }
+
+    .group-section {
+        flex-direction: column; /* Stack on smaller screens */
+        margin: 20px 10px; /* Less margin on small screens */
+    }
+
+    .group1, .group2, .group3, .group4 {
+        width: 100%; /* Full width for groups */
+        margin-bottom: 20px; /* Space between groups */
+    }
+
+    .signup-container {
+        width: 90%; /* Use more width on mobile */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer sections on small screens */
+        align-items: center; /* Center footer content */
+    }
+}
